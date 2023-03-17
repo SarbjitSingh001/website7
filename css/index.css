@@ -2,19 +2,25 @@
 
 body {
     font-family: 'IBM Plex Serif', serif;
-    background-color: gray;
+    background-color: #e8e3e3;
     display: flex;
     height: 100vh;
-    align-items: center;
     justify-content: center;
     margin: 0;
     overflow: hidden;
 }
 
+.a-container {
+    display: flex;
+    align-items: flex-end;
+    height: 90vh;
+}
+
 h1 {
-    color: white;
-    padding: 50px;
+    color: black;
+    margin: 0;
     position: relative;
+    padding: 0 50px;
 }
 
 h1.title {
