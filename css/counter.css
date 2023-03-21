@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Poppins&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto+Mono&family=Roboto:wght@100&family=Rubik+Iso&display=swap');
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #8e44ad;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    
+}
