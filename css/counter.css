@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Poppins&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto+Mono&family=Roboto:wght@100&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
 
 
 body {
@@ -13,6 +13,7 @@ body {
     overflow: hidden;
 }
 
+
 .counter-container {
     display: flex;
     flex-direction: column;
@@ -21,13 +22,16 @@ body {
     margin: 30px 50px;
 }
 
+
 .counter {
     font-size: 60px;
     margin-top: 10px;
 }
+
 
 @media (max-width: 580px) {
     body{
         flex-direction: column;
     }
 }
+
