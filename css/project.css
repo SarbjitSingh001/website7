@@ -2,7 +2,7 @@ body {
     background-color: #a83832;
 }
 
-h1 {
+h1.title {
     position: absolute;
     color: black;
     font-size: 60px;
@@ -10,5 +10,5 @@ h1 {
 }
 
 p {
-
+    font-size: 50px;
 }
