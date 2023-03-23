@@ -22,3 +22,7 @@ body {
     background-color: #1d1d1d;
     transition: 2s ease;
 }
+
+.square:hover {
+    transition-duration: 0s;
+}
