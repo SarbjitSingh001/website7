@@ -1,3 +1,11 @@
 body {
     background-color: #a83832;
 }
+
+h1 {
+    font-size: 60px;
+    color: black;
+    margin: 0;
+    position: relative;
+    padding: 0 50px;
+}
