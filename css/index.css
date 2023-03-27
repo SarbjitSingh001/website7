@@ -13,8 +13,8 @@ body {
 .a-container {
     display: flex;
     align-items: flex-end;
-    height: 60vh;
-    font-size: 5px;
+    height: 75vh;
+    font-size: 10px;
 
 }
 
@@ -22,7 +22,7 @@ h1 {
     color: black;
     margin: 0;
     position: relative;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 h1.title {
