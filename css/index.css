@@ -10,10 +10,16 @@ body {
     overflow: hidden;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+}
 .a-container {
     display: flex;
     align-items: flex-end;
-    height: 75vh;
+    height: 40vh;
     font-size: 10px;
 
 }
