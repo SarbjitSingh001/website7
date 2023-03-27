@@ -13,7 +13,7 @@ body {
 .a-container {
     display: flex;
     align-items: flex-end;
-    height: 80vh;
+    height: 60vh;
     font-size: 5px;
 
 }
