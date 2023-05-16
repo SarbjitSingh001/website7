@@ -1,41 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap');
+
 
 body {
-    font-family: 'IBM Plex Serif', serif;
-    background-color: green;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #333333;
+    color: #222222;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.a-container {
-    display: flex;
-    align-items: flex-end;
-    height: 85vh;
-    font-size: 10px;
-    position: absolute;
+.container {
+    background-color: #fafafa;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    transition: transform 1s linear;
+    transform-origin: top left;
 }
 
-h1 {
-    color: white;
-    margin: 0;
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: #ff7979;
+    border-radius: 50%;
+    transition: transform 1s linear;
     position: relative;
-    padding: 0 20px;
 }
 
-h1.title {
-    height: 100vh;
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
+.circle button {
+    cursor: pointer;
     position: absolute;
-    color: white;
-    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #ffffff;
 }
 
-.idk {
-    display: flex;
-    height: 60vh;
-    width: 30vw;
-    padding: 90px 40px;
+.circle button#open {
+    left: 60%;
 }
 
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%)
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+}
