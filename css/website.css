@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap');
 
+.a-container {
+    display: flex;
+    align-items: flex-end;
+    height: 85vh;
+    font-size: 10px;
+    position: absolute;
+}
+
 p {
     font-size: 15px;
 
